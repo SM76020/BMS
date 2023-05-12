@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+{% include 'navbar.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'reports2.css' %}">
+    <title>Transaction Report</title>
+</head>
+<body>
+  {% block content %}
+  <h1>Transaction Report</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Account Number</th>
+        <th>Transaction Amount</th>
+        <th>Transaction Type</th>
+        <th>Current Balance</th>
+        <th>Date and Time of Transaction</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for transaction in transactions %}
+        <tr>
+          <td>{{ transaction.account_number }}</td>
+          <td>{{ transaction.transaction_amount }}</td>
+          <td>{{ transaction.transaction_type }}</td>
+          <td>{{ transaction.current_balance }}</td>
+          <td>{{ transaction.transaction_datetime }}</td>
+        </tr>
+      {% empty %}
+        <tr>
+          <td colspan="5">No transactions found.</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
+      <!-- <button id="download-button" onclick="window.open('/transaction-pdf')">Download PDF</button> -->
+    </div>
+    
+    <script src="{% static 'reports2.js' %}"></script>
+    
+
+
+</body>
+</html>

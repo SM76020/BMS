@@ -1,0 +1,24 @@
+{% load static %}
+{% include 'navbar.html' %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Withdrawal Form</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'style4.css' %}">
+</head>
+<body>
+    <br>
+  <h2>Withdrawal Form</h2>
+  <form action="/wdmoney/" method="POST">
+    {% csrf_token %} 
+    <label for="account-number">Account Number:</label>
+    <input type="text" id="account-number" name="account_number" required><br><br>
+    
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" name="transaction_amount" required><br><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

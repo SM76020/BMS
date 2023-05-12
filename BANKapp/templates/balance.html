@@ -1,0 +1,23 @@
+{% load static %}
+{% include 'navbar.html' %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Account Balances</title>
+</head>
+<body>
+    <h1>Account Balances</h1>
+    <table>
+        <tr>
+            <th>Account Number</th>
+            <th>Current Balance</th>
+        </tr>
+        {% for transaction in transactions %}
+        <tr>
+            <td>{{ transaction.account_number }}</td>
+            <td>{{ transaction.current_balance }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="{% static 'admin_login.css' %}">
+	<style>
+		input[type=text], input[type=password] 
+		{
+		width: 97%;
+		padding: 10px;
+		margin: 5px 0 22px 0;
+		display: inline-block;
+		border: none;
+		background: #F5F5F5;
+		}
+		form{
+			margin-left: 40px;
+			margin-right: 40px;
+		}
+	</style>
+</head>
+<body class="login-page">
+    <div id="login-wrap">
+        <div class="login-image">
+            </nav> 
+            <div class="login-image-text">
+                <!-- <h2 class="display-lg text-white">ADMIN</h2>
+                <h2 class="display-lg text-primary">PORTAL</h2> -->
+                <!-- <img src="{% static 'ksmsbank.png' %}" alt=""> -->
+            </div>
+      
+        </div>
+		<form action="." method="post" class="login-card-form">
+			{% csrf_token %}
+				<h1>Register Youself</h1>
+				<!-- <h2>KSMS BANK OF INDIA</h2> -->
+				<p>Please fill in this form to create an account.</p>
+				<hr>
+				
+				<label for="name"><b>Name</b></label>
+				<input type="text" placeholder="Enter Your Name" name="fullname" required><br>
+		
+				<label for="username"><b>Username</b></label> 
+				<input type="text" placeholder="Enter Your username" name="username" required><br>
+		
+				<label for="number"><b>Contact No.</b></label>
+				<input type="text" placeholder="Enter Your Contact No." name="phonenumber" required><br>
+				
+				<label for="email"><b>Email</b></label> 
+				<input type="text" placeholder="Enter Your E-mail" name="email" required><br>
+		
+				<label for="pwd"><b>Password</b></label>
+				<input type="password" placeholder="Enter Your Password" name="password" required><br>
+		
+				<label for="branch"><b>Branch</b></label>
+				<input type="text" placeholder="Enter Branch" name="branch" required><br>
+		
+				<label for="gender"><b>Gender</b></label> 
+				 <select name="gender" id="gender" name="gender">
+				   <option value="male">Male</option>
+				   <option value="female">Female</option>
+				 </select>
+				<hr>
+		
+				<button type="submit" value="Register" class="btn btn-primary" >Register</button>
+				<p>Already have an account?<br> <button onclick="location.href='../home';" class="btn btn-primary" >Sign in</button>.</p>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .table-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+  }
+  
+  thead {
+    background-color: #f2f2f2;
+  }
+  
+  th {
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Button styles */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Animations */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes slide-up {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-up {
+    animation-name: slide-up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  button {
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    padding: 12px 24px; /* Padding */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Add a transition effect to the background color */
+  }
+  
+  button:hover {
+    background-color: #3e8e41; /* Darker green background color on hover */
+  }
+  

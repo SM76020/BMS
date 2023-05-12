@@ -1,0 +1,208 @@
+/* form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  div {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  label {
+    width: 100px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 16px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    outline: none;
+    border-bottom: 2px solid #0066cc;
+  }
+  
+  i.fa-pencil {
+    margin-left: 10px;
+    color: #0066cc;
+    cursor: pointer;
+  }
+   */
+
+/* Styles for form input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="phonenumber"]
+input[type="number"] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+/* Styles for label elements */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Styles for edit icons */
+.fa-pencil {
+  position: relative;
+  top: -30px;
+  right: 0;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Styles for submit button */
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Styles for container divs */
+div {
+  margin-bottom: 20px;
+}
+
+/* Styles for form */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 50px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for form headings */
+form h2 {
+  margin-top: 0;
+}
+
+/* Styles for form edit mode */
+form.edit-mode input[type="text"]:not([disabled]),
+form.edit-mode input[type="email"]:not([disabled]),
+form.edit-mode input[type="password"]:not([disabled]),
+form.edit-mode input[type="phonenumber"]:not([disabled]),
+form.edit-mode input[type="number"]:not([disabled]) {
+  border-color: #4CAF50;
+}
+
+form.edit-mode button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  width: 80%;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+div {
+  margin: 10px 0;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="phonenumber"],
+input[type="address"],
+input[type="pincode"],
+input[type="dob"],
+input[type="number"],
+select[type='typeac'] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+button[type="submit"] {
+  background-color: #2200ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 160px;
+}
+
+.fa-pencil {
+  color: #ccc;
+  margin-left: 5px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.fa-pencil:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes shake {
+  0% { transform: rotateZ(0deg); }
+  25% { transform: rotateZ(10deg); }
+  50% { transform: rotateZ(-10deg); }
+  75% { transform: rotateZ(10deg); }
+  100% { transform: rotateZ(0deg); }
+}
+button {
+  background-color: #1f2eff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+
